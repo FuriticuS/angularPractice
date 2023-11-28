@@ -1,0 +1,14 @@
+p{
+  font-size: 41px;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  margin: 24px 0;
+  border-bottom: 1px solid gray;
+}

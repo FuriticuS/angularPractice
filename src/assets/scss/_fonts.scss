@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
+    url("../fonts/Roboto_cyrillic_300.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
+    url("../fonts/Roboto_latin_300.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    local("Roboto-Medium"),
+    url("../fonts/Roboto_cyrillic_500.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    local("Roboto-Medium"),
+    url("../fonts/Roboto_latin_ext_500.woff2") format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    local("Roboto-Medium"),
+    url("../fonts/Roboto_latin_500.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    local("Roboto-Bold"),
+    url("../fonts/Roboto_cyrillic_700.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    local("Roboto-Bold"),
+    url("../fonts/Roboto_latin_700.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  // Fonts
+  --ft-heading-font: Roboto;
+  --ft-text-font: Roboto;
+
+  --ft-font-heading: var(--ft-heading-font); // шрифт для заголовков
+  --ft-font-text: var(--ft-text-font); // шрифт для текста
+
+  --ft-font-heading-1: 700 42px/52px var(--ft-font-heading);
+  --ft-font-heading-2: 500 24px/36px var(--ft-font-heading);
+  --ft-font-heading-3: 400 18px/27px var(--ft-font-heading);
+  --ft-font-heading-4: 600 24px/32px var(--ft-font-heading);
+
+  --ft-font-text-xs: 400 16px/24px var(--ft-font-text);
+  --ft-font-text-s: 400 14px/21px var(--ft-font-text);
+  --ft-font-text-m: 600 16px/24px var(--ft-font-text);
+  --ft-font-text-xl: 400 28px/42px var(--ft-font-text);
+  --ft-font-text-l: 400 18px/27px var(--ft-font-text);
+
+  --ft-font-text-btn: 500 18px/24px var(--ft-font-text);
+
+  // Font sizes
+  --ft-font-size-14: 14px;
+  --ft-font-size-18: 18px;
+  --ft-font-size-24: 24px;
+  --ft-font-size-42: 42px;
+
+  // Line heights
+  --ft-line-height-21: 21px;
+  --ft-line-height-27: 27px;
+  --ft-line-height-36: 36px;
+  --ft-line-height-42: 42px;
+  --ft-line-height-52: 52px;
+}
