@@ -1,3 +1,20 @@
 <div>
   <h2>{{title}}</h2>
+
+  <form>
+    <input type="text" (input)="onInput($event)">
+    <p>{{clickInputValue}}</p>
+
+    <button (click)="clickInput($event)">Введите данные</button>
+  </form>
+
+  <form>
+    <p>{{keyboardEvent}}</p>
+    <input type="text" (keyup)="onInputTwo($event)">
+    <p>{{inputValueTwo}}</p>
+  </form>
+
+    <p>{{keyboardEventEnter}}</p>
+    <input #inp type="text" (keyup.enter)="onInputThree(inp.value)" (blur)="onBlur(inp.value)">
+    <p>{{inputValueThree}}</p>
 </div>

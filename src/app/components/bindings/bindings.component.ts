@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./bindings.component.scss']
 })
 export class BindingsComponent {
+  title: string = 'Bindings - механизм привязки из ts в HTML'
   img: string = 'assets/img/angular.png';
 
   constructor() {
