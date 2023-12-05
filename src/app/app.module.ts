@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,9 @@ import { ShabloniComponent } from './components/shabloni/shabloni.component';
 import { InterpolyaciyaComponent } from './components/interpolyaciya/interpolyaciya.component';
 import { BindingsComponent } from './components/bindings/bindings.component';
 import { EventBindingsComponent } from './components/event-bindings/event-bindings.component';
+import { TwoWayBindingsComponent } from './components/two-way-bindings/two-way-bindings.component';
+import { DirectiveStyleComponent } from './components/directive-style/directive-style.component';
+import { DirectiveClassComponent } from './components/directive-class/directive-class.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { EventBindingsComponent } from './components/event-bindings/event-bindin
     ShabloniComponent,
     InterpolyaciyaComponent,
     BindingsComponent,
-    EventBindingsComponent
+    EventBindingsComponent,
+    TwoWayBindingsComponent,
+    DirectiveStyleComponent,
+    DirectiveClassComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

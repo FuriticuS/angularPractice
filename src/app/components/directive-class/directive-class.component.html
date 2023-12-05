@@ -1,0 +1,19 @@
+<div>
+  <h2>{{title}}</h2>
+
+<!--  первый способ-->
+  <button (click)="classBlock = !classBlock">Toggle Class</button>
+
+  <div [ngClass]="{
+    gray: classBlock,
+    coral: !classBlock
+  }">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad consequuntur, enim error ipsam labore nihil obcaecati quo tenetur ut.</div>
+
+  <!--  второй способ-->
+  <button (click)="classBlockToggle()">Toggle class v2</button>
+
+  <div
+    [class.gray] = 'classBlockTwo'
+    [class.coral]="!classBlockTwo"
+  >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dignissimos esse iure minus</div>
+</div>

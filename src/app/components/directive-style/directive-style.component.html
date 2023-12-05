@@ -1,0 +1,12 @@
+<div>
+  <h2>{{title}}</h2>
+
+  <button (click)="divToggle = !divToggle">Toggle Style</button>
+
+  <div [ngStyle]="{
+    width: '200px',
+    height: '200px',
+    backgroundColor: divToggle ? 'gray' : 'black',
+    color: '#fff'
+  }">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, optio!</div>
+</div>

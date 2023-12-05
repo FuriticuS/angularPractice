@@ -1,0 +1,11 @@
+<div>
+  <h2>{{title}}</h2>
+
+<!--  неправильный пример-->
+  <input #valueInput type="text" [value]="text" (input)="onInput(valueInput)" >
+  <p>{{text}}</p>
+
+  <!--  правильный пример с добавлением FormsModule -->
+  <input type="text" [(ngModel)]="textTwo">
+  <p>{{textTwo}}</p>
+</div>
