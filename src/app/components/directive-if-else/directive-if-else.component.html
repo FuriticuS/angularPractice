@@ -1,0 +1,26 @@
+<div>
+  <h2>{{title}}</h2>
+
+  <button (click)="toggleBtn()">Click toggle</button>
+
+  <p *ngIf="toggleIf" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, laudantium.</p>
+  <p *ngIf="!toggleIf" class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, laudantium.</p>
+
+  <button (click)="toggleBtnTwo()">Toggle</button>
+  <p *ngIf="toggleIfElse; else blue" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Reprehenderit, voluptate.</p>
+
+  <ng-template #blue>
+    <p class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A enim error exercitationem facilis id
+      magnam perferendis quae quisquam sit voluptates?</p>
+  </ng-template>
+
+  <button (click)="toggleTree()">Toggle Switch</button>
+  <button (click)="toggleSwitch = 'Default text'">Toggle Switch Default</button>
+
+  <div [ngSwitch]="toggleSwitch">
+    <p *ngSwitchCase="true" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, saepe = {{toggleSwitch}}</p>
+    <p *ngSwitchCase="false" class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, veritatis! = {{toggleSwitch}}</p>
+    <p *ngSwitchDefault>{{toggleSwitch}}</p>
+  </div>
+</div>
