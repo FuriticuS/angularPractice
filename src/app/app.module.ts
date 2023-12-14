@@ -13,6 +13,8 @@ import { TwoWayBindingsComponent } from './components/two-way-bindings/two-way-b
 import { DirectiveStyleComponent } from './components/directive-style/directive-style.component';
 import { DirectiveClassComponent } from './components/directive-class/directive-class.component';
 import { DirectiveIfElseComponent } from './components/directive-if-else/directive-if-else.component';
+import { DirectiveNgforComponent } from './components/directive-ngfor/directive-ngfor.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { DirectiveIfElseComponent } from './components/directive-if-else/directi
     TwoWayBindingsComponent,
     DirectiveStyleComponent,
     DirectiveClassComponent,
-    DirectiveIfElseComponent
+    DirectiveIfElseComponent,
+    DirectiveNgforComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
